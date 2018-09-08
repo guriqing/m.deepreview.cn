@@ -1,0 +1,9 @@
+@rate: 750 / 100rem;
+
+.px2rem (@name, @px) {
+  @{a}: @px / @rate;
+}
+
+.fontSize(@px) {
+  .px2rem(font-size, @px)
+}
