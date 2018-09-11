@@ -27,6 +27,9 @@ export default {
 
 <style lang="less" scoped>
 @import '../../assets/styles/_variables.less';
+.classify {
+  margin: 0;
+}
 .fense {
   position: relative;
   display: inline-block;
@@ -49,11 +52,10 @@ export default {
   position: absolute;
   width: 94/@rate;
   text-align: center;
-  background: #fff;
+  background: red;
   border: 1/@rate solid #f5f5f5;
   list-style: none;
   margin-top: -20/@rate;
-  display: none;
 }
 .liebiao li a {
   display: block;
@@ -64,6 +66,7 @@ export default {
   line-height: 40/@rate;
   color: #333333;
   text-decoration: none;
+  background: blue;
 }
 .seek {
   display: inline-block;
