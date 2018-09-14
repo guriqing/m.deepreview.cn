@@ -1,6 +1,6 @@
 <template>
   <div class="daxiang">
-    <div>
+    <div v-for="n in 10" :key="n">
       <p class="shidi">《大象席地而坐》：小人物的时代悲歌</p>
       <p class="yuancuan">原创 · 迷茫 · 逃离  </p>
       <div class="riqi">

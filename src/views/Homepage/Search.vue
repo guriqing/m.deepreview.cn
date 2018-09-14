@@ -5,11 +5,13 @@
         <p>分类</p>
         <img src="../../assets/images/Spinner.png">
       </div>
-      <ul class="liebiao">
-        <li><a href="#">书评</a></li>
-        <li><a href="#">影评</a></li>
-        <li><a href="#">艺评</a></li>
-      </ul>
+      <div class="liebiao">
+        <ul>
+          <li><a href="#">书评</a></li>
+          <li><a href="#">影评</a></li>
+          <li><a href="#">艺评</a></li>
+        </ul>
+      </div>
     </div>
     <div class="seek">
       <a href="#"><img src="../../assets/images/icon-search1.png"></a>
@@ -27,9 +29,6 @@ export default {
 
 <style lang="less" scoped>
 @import '../../assets/styles/_variables.less';
-.classify {
-  margin: 0;
-}
 .fense {
   position: relative;
   display: inline-block;
@@ -50,12 +49,21 @@ export default {
 }
 .liebiao {
   position: absolute;
-  width: 94/@rate;
+  width: 96/@rate;
   text-align: center;
-  background: red;
+  background: #fff;
   border: 1/@rate solid #f5f5f5;
-  list-style: none;
   margin-top: -20/@rate;
+  // display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liebiao ul {
+  list-style: none;
+  margin-left: -80/@rate;
+  margin-top: -1/@rate;
+  flex: 1;
 }
 .liebiao li a {
   display: block;
@@ -66,7 +74,6 @@ export default {
   line-height: 40/@rate;
   color: #333333;
   text-decoration: none;
-  background: blue;
 }
 .seek {
   display: inline-block;

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import Home from './views/Home.vue'
 // import About from './views/About.vue'
 import Homepage from '@/views/Homepage/Index.vue'
+import Shuping from '@/views/Shuping/Index.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/homepage',
       name: 'homepage',
       component: Homepage
+    },
+    {
+      path: '/shuping',
+      name: 'shuping',
+      component: Shuping
     }
   ]
 })
