@@ -4,6 +4,9 @@ import Router from 'vue-router'
 // import About from './views/About.vue'
 import Homepage from '@/views/Homepage/Index.vue'
 import Shuping from '@/views/Shuping/Index.vue'
+import Search from '@/views/Search/Index.vue'
+import Column from '@/views/Column/Index.vue'
+import Article from '@/views/Article/Index.vue'
 
 Vue.use(Router)
 
@@ -30,6 +33,21 @@ export default new Router({
       path: '/shuping',
       name: 'shuping',
       component: Shuping
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: Search
+    },
+    {
+      path: '/column',
+      name: 'column',
+      component: Column
+    },
+    {
+      path: '/article',
+      name: 'article',
+      component: Article
     }
   ]
 })
