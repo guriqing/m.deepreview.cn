@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="bgs">
-      <div class="shou">
+      <router-link  to="/column/shuping" class="shou">
         <img src="../../assets/images/menu1.png">
         <p>书评</p>
-      </div>
+      </router-link>
       <div class="shou">
         <img src="../../assets/images/menu3.png">
         <p>影评</p>

@@ -7,6 +7,8 @@ import Shuping from '@/views/Shuping/Index.vue'
 import Search from '@/views/Search/Index.vue'
 import Column from '@/views/Column/Index.vue'
 import Article from '@/views/Article/Index.vue'
+import Searchresult from '@/views/Searchresult/Index.vue'
+import Columndetails from '@/views/Columndetails/Index.vue'
 
 Vue.use(Router)
 
@@ -48,6 +50,16 @@ export default new Router({
       path: '/article',
       name: 'article',
       component: Article
+    },
+    {
+      path: '/searchresult',
+      name: 'searchresult',
+      component: Searchresult
+    },
+    {
+      path: '/columndetails',
+      name: 'columndetails',
+      component: Columndetails
     }
   ]
 })

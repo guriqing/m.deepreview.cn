@@ -23,29 +23,31 @@ export default {
 <style lang="less" scoped>
 @import '../../assets/styles/_variables.less';
 .details {
-  width: 690/@rate;
-  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0/@rate 30/@rate;
+  margin-top: 30/@rate;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.columns img {
-  width: 20/@rate;
-  height: 35/@rate;
-  margin-right: 18/@rate;
-}
-.columns h1 {
-  font-size: 30/@rate;
-  font-family: 宋体;
-  color: #333;
-}
-.alisd {
-  width: 27/@rate;
-  height: 27/@rate;
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 20/@rate;
+      height: 35/@rate;
+      margin-right: 18/@rate;
+    }
+    h1 {
+      font-size: 30/@rate;
+      font-family: 宋体;
+      color: #333;
+    }
+  }
+  .alisd {
+    width: 27/@rate;
+    height: 27/@rate;
+  }
 }
 </style>

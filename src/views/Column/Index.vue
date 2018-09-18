@@ -23,18 +23,20 @@ export default {
 <style lang="less" scoped>
 @import '../../assets/styles/_variables.less';
 .column {
-  width: 690/@rate;
-  margin: 0 auto;
-  text-align: left;
-}
-.column h1 {
-  font-size: 36/@rate;
-  font-family: 宋体;
-  color: #333;
-}
-.xian {
   width: 100%;
-  height: 2/@rate;
-  background: #e5e5e5;
+  box-sizing: border-box;
+  padding: 0/@rate 30/@rate;
+  margin-top: 120/@rate;
+  h1 {
+    font-size: 36/@rate;
+    font-family: 宋体;
+    color: #333;
+  }
+  .xian {
+    width: 100%;
+    height: 2/@rate;
+    background: #e5e5e5;
+    margin-top: 22/@rate;
+  }
 }
 </style>
