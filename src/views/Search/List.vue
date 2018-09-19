@@ -1,5 +1,5 @@
 <template>
-  <div class="left">
+  <div class="ziyou">
     <div class="scoed">
       <ul>
         <li v-for="n in 10" :key="n">#自由</li>
@@ -16,20 +16,23 @@ export default {
 
 <style lang="less" scoped>
 @import '../../assets/styles/_variables.less';
-.scoed {
-  width: 690/@rate;
-  margin: 0 auto;
-  text-align: left;
-}
-.scoed ul {
-  list-style: none;
-  font-size: 24/@rate;
-  font-family: 宋体;
-  color: #00b7f0;
-  margin-left: -100/@rate;
-}
-.scoed ul li {
-  display: inline-block;
-  padding: 0/@rate 40/@rate;
+.ziyou {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0/@rate 30/@rate;
+  .scoed {
+    margin-top: 60/@rate;
+    ul {
+      font-size: 24/@rate;
+      font-family: 宋体;
+      color: #00b7f0;
+      width: 376/@rate;
+      li {
+        display: inline-block;
+        margin-right: 60/@rate;
+        line-height: 60/@rate;
+      }
+    }
+  }
 }
 </style>

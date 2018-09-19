@@ -19,7 +19,9 @@ export default {
 body,
 ul,
 li,
-p {
+p,
+a,
+img {
   margin: 0;
   padding: 0;
 }

@@ -2,7 +2,6 @@
   <div>
     <div class="column">
       <h1>专栏</h1>
-      <div class="xian"></div>
     </div>
     <List/>
     <Tabbar/>
@@ -27,16 +26,18 @@ export default {
   box-sizing: border-box;
   padding: 0/@rate 30/@rate;
   margin-top: 120/@rate;
+  &::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2/@rate;
+    background: #e5e5e5;
+    margin-top: 20/@rate;
+  }
   h1 {
     font-size: 36/@rate;
     font-family: 宋体;
     color: #333;
-  }
-  .xian {
-    width: 100%;
-    height: 2/@rate;
-    background: #e5e5e5;
-    margin-top: 22/@rate;
   }
 }
 </style>
